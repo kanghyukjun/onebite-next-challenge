@@ -1,10 +1,13 @@
+import MovieContainer from "@/components/movie-container";
+import RecommendMovieContainer from "@/components/recommend-movie-container";
 import SearchLayout from "@/components/search-layout";
 import { ReactNode } from "react";
 
 export default function Home() {
   return (
-    <div>
-      <h1>INDEX</h1>
+    <div className="mt-6">
+      <RecommendMovieContainer />
+      <MovieContainer />
     </div>
   );
 }
